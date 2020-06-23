@@ -10,6 +10,9 @@ data class Escola(
     var NOM_MUNC : String ="",
     var  TIP_LOGR: String="",
     var NOM_LOGR: String="",
-    var END_COMPLETO: String= TIP_LOGR + "" + NOM_LOGR
+    var END_COMPLETO: String= TIP_LOGR + "" + NOM_LOGR,
+    var NUM_CEP : String ="",
+    var SIG_UF : String ="",
+    var DES_GERE_REGI : String =""
 )
 

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowLigth">
+
+    <RelativeLayout
+        android:id="@+id/nome"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/nome_escola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomeEscola"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+        <TextView
+            android:id="@+id/valor_nome_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_escola"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/endereco"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nome">
+
+        <TextView
+            android:id="@+id/nome_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomEndereco"
+
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+        <TextView
+            android:id="@+id/valor_tipo_logr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/nome_endereco"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+        <TextView
+            android:id="@+id/valor_rua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/valor_tipo_logr"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+        <TextView
+            android:id="@+id/valor_numero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/valor_rua"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bairro"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endereco">>
+
+        <TextView
+            android:id="@+id/nome_bairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"
+            android:text="@string/nomeBairro"/>
+
+        <TextView
+            android:id="@+id/valor_bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_bairro"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cep"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bairro">>
+
+        <TextView
+            android:id="@+id/nome_cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"
+            android:text="@string/cep"/>
+
+        <TextView
+            android:id="@+id/valor_cep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_cep"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/municipio"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cep">>
+
+        <TextView
+            android:id="@+id/nome_municipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"
+            android:text="@string/nomeMunicipio"/>
+
+        <TextView
+            android:id="@+id/valor_municipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_municipio"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+        <TextView
+            android:id="@+id/nome_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/valor_municipio"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"
+            android:text="@string/nomeUF"/>/>
+
+        <TextView
+            android:id="@+id/valor_uf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_uf"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/regiao"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/municipio">>
+
+        <TextView
+            android:id="@+id/nome_regiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"
+            android:text="@string/regiao"/>
+
+        <TextView
+            android:id="@+id/valor_regiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/nome_regiao"
+            android:gravity="right"
+            android:textSize="14dp"
+            android:textColor="@color/grayDark"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
