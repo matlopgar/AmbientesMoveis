@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">trabalhoFinal</string>
+    <string name="app_name">School</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="nomeEscola">Nome:</string>
+    <string name="nomeBairro">Bairro:</string>
+    <string name="cep">CEP:</string>
+    <string name="nomeMunicipio">Municipio:</string>
+    <string name="nomeUF">UF:</string>
+    <string name="regiao">Descrição da região:</string>
+    <string name="nomEndereco">Edereço:</string>
 </resources>
